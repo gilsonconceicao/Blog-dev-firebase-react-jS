@@ -1,0 +1,174 @@
+.flex_header_posts {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex_header_posts>input {
+    display: block;
+    width: 400px;
+    border: 2px solid black;
+    margin-right: 20px;
+}
+
+.camp_search {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3x;
+}
+
+.icon {
+    font-size: 30px;
+    margin-left: 10px;
+    margin-right: 30px;
+}
+
+.container_posts {
+    background-color: #1d1e1f09;
+    display: grid;
+    grid-template-columns: auto 300px;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+
+.allPosts {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.container_posts h2 {
+    font-size: 3em;
+}
+
+.subtitle {
+    margin-bottom: 20px;
+}
+
+.date {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.nameUser {
+    display: block;
+    font-size: 20px;
+    color: #252627;
+    margin-top: 7px;
+    margin-left: 10px   ;
+}
+
+.nameAndLink {
+    display: flex;
+    align-items: center;
+}
+
+.nameAndLink > a {
+    font-size: 2em;
+    color: #242627;
+    text-decoration: none;
+}
+
+.posts {
+    border-top: 1px solid #2426274b;
+    margin: 20px 0;
+    width: 95%;
+    position: relative;
+    padding:  10px 0;
+}
+
+.posts:nth-child(1){border-top: none;}
+.posts>h4 {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.posts>p {
+    color: #1d1e1fe5;
+    font-size: 18px;
+}
+
+.posts img {
+    display: block;
+    width: 50%;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+.nameAndLink,
+.textAboutData {
+    padding: 8px;
+}
+
+.flex_options {
+    display: flex;
+}
+
+.flex_options button {
+    margin: 0 10px ;
+}
+
+
+/* left interactives */
+
+.interactives {
+    background-color: #d8eafa38;
+
+}
+
+.interactives>h3 {
+    font-size: 1.4em;
+    margin: 10px;
+}
+
+.guide_dev {
+    list-style-type: none;
+}
+
+.guide_dev li {
+    margin: 20px 0;
+}
+
+.guide_dev a {
+    border-bottom: 1px solid #1d1e1f3f;
+    color: #242627;
+    text-decoration: none;
+}
+
+.guide_dev a:hover {
+    background-color: #1d1e1f15;
+}
+
+.btnRefresh {
+    background-color: #f0f0f0;
+    border-radius: 7px;
+    width: 40px;
+    font-size: 20px;
+    display: block;
+    cursor: pointer;
+    border: none;
+}
+
+
+@media screen and (max-width: 870px) {
+    .container_posts {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .posts img {
+        width: 80%;
+    }
+    
+}
+
+@media screen and (max-width: 500px) {
+    .flex_header_posts {
+        display: block;
+    }
+
+    .camp_search {
+        margin-top: 20px;
+    }
+}
